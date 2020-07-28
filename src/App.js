@@ -4,6 +4,7 @@ import "./App.css";
 import ListEmployeeComponent from "./components/ListEmployeeComponent";
 import HeaderComponent from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
+import CreateEmployeeComponent from "./components/CreateEmployeeComponent";
 
 function App() {
   return (
@@ -14,8 +15,10 @@ function App() {
           <Switch>
             <Route path="/" exact component={ListEmployeeComponent}></Route>
             <Route path="/employees" component={ListEmployeeComponent}></Route>
-            {/* <Route path="/" component={ListEmployeeComponent}></Route> */}
-            <ListEmployeeComponent />
+            <Route
+              path="/add-employee"
+              component={CreateEmployeeComponent}
+            ></Route>
           </Switch>
         </div>
         <FooterComponent />
