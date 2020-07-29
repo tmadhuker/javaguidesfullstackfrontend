@@ -13,7 +13,7 @@ export default class HeaderComponent extends Component {
         <header>
           <nav className="navbar navbar-expand-md navbar-dark bg-dark ">
             <div>
-              <a href="https://google.com" className="navbar-brand">
+              <a href="localhost:3000/employees" className="navbar-brand">
                 Employee Management App
               </a>
             </div>
