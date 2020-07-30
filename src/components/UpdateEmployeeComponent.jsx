@@ -38,6 +38,10 @@ export default class UpdateEmployeeComponent extends Component {
     };
     console.log("employee =>" + JSON.stringify(employee));
 
+    EmployeeService.updateEmployeebyId(employee, this.state.id).then((res) => {
+      this.props.history.push("/employees");
+    });
+
     // EmployeeService.createEmployee(employee).then((res) => {
     //   this.props.history.push("/employees");
     // });
